@@ -1,12 +1,12 @@
 /*aplayer 播放器隐藏*/
 .aplayer .aplayer-lrc p {
   font-size:12px;
-  font-weight:700;
+  font-weight:500;
   line-height:16px!important
 }
 .aplayer .aplayer-lrc p.aplayer-lrc-current {
   font-size:15px;
-  color:#00c4b6
+  color: #95ce8a /*#00c4b6*/
 }
 .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
   left:-66px!important
@@ -128,8 +128,39 @@
 }
 /* 顶部导航栏 */
 #nav a {
-    color: #333;
+    color: #fffee7;
 }
+/* 顶部导航栏图标 
+.fa-search:before {
+    content: "\f002";
+    color: #dca271;
+}
+.fa-universal-access:before {
+    content: "\f29a";
+    color: #dca070;
+}
+.fa-home:before {
+    content: "\f015";
+    color: #dda274;
+}
+.fa-list:before {
+    content: "\f03a";
+    color: #dda274;
+}
+.fa-paper-plane:before {
+    content: "\f1d8";
+    color: #dda274;
+}
+.fa-link:before {
+    content: "\f0c1";
+    color: #dda274;
+}
+.fa-heart:before {
+    content: "\f004";
+    color: #dda274;
+}
+*/
+
 /* 卡片处小图标 */
 .iconbilibili1:before {
   font-size: 23px;
@@ -148,6 +179,15 @@
   background: transparent !important;
 }
 top-img隐藏 */
+
+/* 取消banner背景 */
+
+  /* 采用透明的方式取消，最后一个0表示透明 
+#page-header {
+    background: 0 0!important;
+}
+*/
+
 
 /* 标题图标 */
 #article-container.post-content h1:before, h2:before, h3:before, h4:before, h5:before, h6:before {
@@ -295,4 +335,12 @@ img {
 /*a标签颜色*/
 a {
     color: #00c4b6;
+}
+
+/* 所有背景（包括首页卡片、文章页、页面页等） */
+
+#aside_content .card-widget, #recent-posts>.recent-post-item, .layout_page>div:first-child:not(.recent-posts), .layout_post>#page, .layout_post>#post, .read-mode .layout_post>#post{
+    /* 以下代表白色透明度为0.3 */
+  
+   background: rgba(255,255,255,0.9);
 }
