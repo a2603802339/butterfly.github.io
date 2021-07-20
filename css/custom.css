@@ -344,3 +344,7 @@ a {
   
    background: rgba(255,255,255,0.9);
 }
+/*live2D按钮*/
+#rightside {
+    bottom: 150px;
+}
